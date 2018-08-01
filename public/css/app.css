@@ -1,0 +1,180 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url('/fonts/lato-bold-webfont.eot');
+  src: url('/fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/lato-bold-webfont.woff2') format('woff2'), url('/fonts/lato-bold-webfont.woff') format('woff'), url('/fonts/lato-bold-webfont.ttf') format('truetype'), url('/fonts/lato-bold-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  display: block;
+  width: 100%;
+  position: fixed;
+}
+header .transparent-bg {
+  background-color: rgba(38, 34, 35, 0.5);
+}
+header .transparent-bg #logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 24px;
+}
+header .transparent-bg #logo h1 a {
+  background: url("/images/logo.png") no-repeat center;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+  display: block;
+}
+header .transparent-bg #logo h1 a .alt-text {
+  text-indent: -9999px;
+  display: inline-block;
+}
+header .transparent-bg #main-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+}
+header .transparent-bg #main-menu nav ul li {
+  list-style: none;
+  float: left;
+}
+header .transparent-bg #main-menu nav ul li a {
+  padding: 18px 40px;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'latobold';
+}
+header .transparent-bg #main-menu nav ul li .sub-menu {
+  display: none;
+}
