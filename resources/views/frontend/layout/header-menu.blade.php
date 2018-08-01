@@ -19,10 +19,10 @@
 						<li><a href="">Products</a></li>
 						<li><a href="">Recipes</a>
 							<ul class="sub-menu">
-								<li><a href="">Glossary of terms</a></li>
-								<li><a href="">Tips and Technique</a></li>
-								<li><a href="">Food Plating</a></li>
-								<li><a href="">Explore Flavors</a></li>
+								<li class="transparent-bg"><a href="">Glossary of terms</a></li>
+								<li class="transparent-bg"><a href="">Tips and Technique</a></li>
+								<li class="transparent-bg"><a href="">Food Plating</a></li>
+								<li class="transparent-bg"><a href="">Explore Flavors</a></li>
 							</ul>
 						</li>
 						<li><a href="">Cooking Tips</a></li>

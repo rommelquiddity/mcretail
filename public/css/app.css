@@ -131,6 +131,13 @@ a img {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('/fonts/OpenSans-Semibold-webfont.eot');
+  src: url('/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Semibold-webfont.woff2') format('woff2'), url('/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('/fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   display: block;
   width: 100%;
@@ -162,22 +169,24 @@ header .transparent-bg #main-menu {
   display: inline-flex;
   vertical-align: bottom;
   margin-bottom: 20px;
+  font-family: 'latobold';
 }
-header .transparent-bg #main-menu nav ul li {
+header .transparent-bg #main-menu nav ul {
   list-style: none;
+}
+header .transparent-bg #main-menu nav ul:not(.sub-menu) > li {
   float: left;
   position: relative;
 }
-header .transparent-bg #main-menu nav ul li > a {
-  padding: 18px 55px 20px;
+header .transparent-bg #main-menu nav ul:not(.sub-menu) > li > a {
   color: #ffffff;
-  font-size: 18px;
+  padding: 18px 55px 20px;
+  font-size: 17px;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'latobold';
-  position: relative;
 }
-header .transparent-bg #main-menu nav ul li > a:before {
+header .transparent-bg #main-menu nav ul:not(.sub-menu) > li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -191,25 +200,20 @@ header .transparent-bg #main-menu nav ul li > a:before {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-header .transparent-bg #main-menu nav ul li > a:hover:before {
+header .transparent-bg #main-menu nav ul:not(.sub-menu) > li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-header .transparent-bg #main-menu nav ul li > a:hover ul.sub-menu {
+header .transparent-bg #main-menu nav ul:not(.sub-menu) > li:hover ul.sub-menu {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
 }
-header .transparent-bg #main-menu nav ul li:hover ul.sub-menu {
-  visibility: visible;
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-header .transparent-bg #main-menu nav ul li ul.sub-menu {
+header .transparent-bg #main-menu nav ul ul.sub-menu {
   position: absolute;
   left: 0;
-  top: 36px;
+  top: 45px;
   z-index: 1;
   visibility: visible;
   opacity: 0;
@@ -217,18 +221,29 @@ header .transparent-bg #main-menu nav ul li ul.sub-menu {
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
 }
-header .transparent-bg #main-menu nav ul li ul.sub-menu li {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, #fff), color-stop(1%, rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to right, #fff 15%, rgba(255, 255, 255, 0) 1%);
+header .transparent-bg #main-menu nav ul ul.sub-menu > li {
+  width: 100%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+header .transparent-bg #main-menu nav ul ul.sub-menu > li:not(:first-child) {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(11%, #fff), color-stop(1%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #fff 11%, rgba(255, 255, 255, 0) 1%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
-header .transparent-bg #main-menu nav ul li ul.sub-menu li padding a {
-  font-size: 14px;
+header .transparent-bg #main-menu nav ul ul.sub-menu > li > a {
+  font-size: 13px;
   display: block;
-  padding: 10px;
+  padding: 16px 18px;
   color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'open_sanssemibold';
+}
+header .transparent-bg #main-menu nav ul ul.sub-menu > li:hover {
+  background-color: rgba(190, 44, 44, 0.8);
 }
 .container {
   max-width: 1900px;

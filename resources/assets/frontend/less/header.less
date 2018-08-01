@@ -9,6 +9,7 @@ header{
 		#logo {
 			display: inline-flex;
 			padding: 15px 24px;
+
 			h1{
 				a{
 					background: url("@{images}/logo.png") no-repeat center;
@@ -29,88 +30,104 @@ header{
 			display: inline-flex;
 			vertical-align: bottom;
 			margin-bottom: 20px;
+			font-family: 'latobold';
+
 			nav{
-				ul {
-					li{
-						list-style: none;
-						float: left;
-						position: relative;
-						> a{
-							padding: 18px 55px 20px;
-							color: @font-white;
-							font-size: 18px;
-							text-decoration: none;
-							text-transform: uppercase;
-							font-family: 'latobold';
+				ul{
+					list-style: none;
+
+					&:not(.sub-menu){
+						> li{
+							float: left;
 							position: relative;
 
-							&:before{
-								content: "";
-								position: absolute;
-								width: 100%;
-								height: 3px;
-								bottom: 0;
-								left: 0;
-								background-color: @hover-underline-color;
-								visibility: hidden;
-								-webkit-transform: scaleX(0);
-								transform: scaleX(0);
-								-webkit-transition: all 0.3s ease-in-out 0s;
-								transition: all 0.3s ease-in-out 0s;
+							> a{
+								color: @font-white;
+								padding: 18px 55px 20px;
+								font-size: 17px;
+								position: relative;
+								text-decoration: none;
+								text-transform: uppercase;
+
+								&:before{
+									content: "";
+									position: absolute;
+									width: 100%;
+									height: 3px;
+									bottom: 0;
+									left: 0;
+									background-color: @hover-underline-color;
+									visibility: hidden;
+									-webkit-transform: scaleX(0);
+									transform: scaleX(0);
+									-webkit-transition: all 0.3s ease-in-out 0s;
+									transition: all 0.3s ease-in-out 0s;
+								}
+
+								&:hover{
+									&:before{
+									  	visibility: visible;
+										-webkit-transform: scaleX(1);
+										transform: scaleX(1);
+									}
+
+								}
+						
 							}
 
 							&:hover{
-								&:before{
-								  	visibility: visible;
-									-webkit-transform: scaleX(1);
-									transform: scaleX(1);
-								}
 								ul.sub-menu{
 									visibility: visible;
 									opacity: 1;
 									filter: alpha(opacity=100);
 								}
-
-							}
-					
-						}
-
-						&:hover{
-							ul.sub-menu{
-								visibility: visible;
-								opacity: 1;
-								filter: alpha(opacity=100);
 							}
 						}
+					}
 
-						ul.sub-menu{
-							position: absolute;
-							left: 0;
-							top: 36px;
-							z-index: 1;
-							visibility: visible;
-							opacity: 0;
-							filter: alpha(opacity=0);
-							-webkit-transition: 200ms ease;
-							-moz-transition: 200ms ease;
-							-o-transition: 200ms ease;
-							transition: 200ms ease;
+					ul.sub-menu{
+						position: absolute;
+						left: 0;
+						top: 45px;
+						z-index: 1;
+						visibility: visible;
+						opacity: 0;
+						filter: alpha(opacity=0);
+						-webkit-transition: 200ms ease;
+						-moz-transition: 200ms ease;
+						-o-transition: 200ms ease;
+						transition: 200ms ease;
 
-							li{
-								background-image: linear-gradient(to right, #fff 15%, rgba(255, 255, 255, 0) 1%);
+						> li{
+							width: 100%;
+							-webkit-transition: background 300ms ease-in-out;
+							-moz-transition: background 300ms ease-in-out;
+							-ms-transition: background 300ms ease-in-out;
+							-o-transition: background 300ms ease-in-out;
+							transition: background 300ms ease-in-out;
+
+							&:not(:first-child){
+								background-image: linear-gradient(to right, #fff 11%, rgba(255, 255, 255, 0) 1%);
 								background-position: top;
 								background-size: 10px 1px;
 								background-repeat: repeat-x;
-								padding								
-								a{
-									font-size: 14px;
-									display: block;
-									padding: 10px;
-									color: @font-white;
-								}
+							}
+							
+							> a {
+								font-size: 13px;
+								display: block;
+						        padding: 16px 18px;
+								color: @font-white;
+								text-decoration: none;
+								text-transform: uppercase;
+								font-family: 'open_sanssemibold';
 							}
 
+							&:hover{
+								background-color: rgba(190, 44, 44, 0.8);
+							}
 						}
+
 					}
 				}
 			}
