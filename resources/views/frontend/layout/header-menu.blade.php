@@ -30,6 +30,10 @@
 					</ul>
 				</nav>
 			</div>
+			<div id="user-login-signup">
+				<a class="signup-link" href="#">No account yet? Sign up here</a>
+				<a class="login-link" href="">Login</a>
+			</div>
 		</div>
 	</div>
 </header>

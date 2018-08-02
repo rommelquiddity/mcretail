@@ -2,13 +2,12 @@ header{
 	display: block;
 	width: 100%;
 	position: fixed;
+	z-index: 99;
 
-	.@{transparent-color} {
-	 	background-color: rgba(38, 34, 35, .5);
 
 		#logo {
 			display: inline-flex;
-			padding: 15px 24px;
+			padding: 15px 0;
 
 			h1{
 				a{
@@ -30,7 +29,8 @@ header{
 			display: inline-flex;
 			vertical-align: bottom;
 			margin-bottom: 20px;
-			font-family: 'latobold';
+			font-family: 'latoregular';
+			font-weight: bold;
 
 			nav{
 				ul{
@@ -44,7 +44,7 @@ header{
 							> a{
 								color: @font-white;
 								padding: 18px 55px 20px;
-								font-size: 17px;
+								font-size: 16px;
 								position: relative;
 								text-decoration: none;
 								text-transform: uppercase;
@@ -132,6 +132,36 @@ header{
 				}
 			}
 		}
-	}
+
+		#user-login-signup{
+			display: block;
+			float: right;
+			a {
+				display: block;
+			}
+
+			.signup-link{
+				color: @light-green;
+				font-size: 17px;
+				font-family: 'latoregular';
+				font-style: italic;
+			    margin-top: 26px;
+    			margin-right: 10px;
+			}
+
+			.login-link{
+				color: @font-white;
+				text-transform: uppercase;
+				padding: 30px;
+				text-align: right;
+				text-decoration-line: none;
+				font-weight: bold;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+
+	
 }
 

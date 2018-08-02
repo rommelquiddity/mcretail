@@ -2,6 +2,10 @@
 
 @section('content')
 
-@include('frontend.home.banner')
+<div id="home">
+@include('frontend.home.hero-banner')
+@include('frontend.home.product-banner')
+
+</div>
 
 @endsection
