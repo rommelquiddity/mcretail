@@ -1,0 +1,52 @@
+footer{
+
+	h4 {
+		color: @font-black;
+		font-weight: bold;
+		font-size: 20px;
+		margin-top: 25px;
+		text-transform: uppercase;
+	}
+
+	h4:before, .no-margin-top:before{
+        content: '';
+		position: absolute;
+		height: 3px;
+		margin: 0 auto;
+		left: 15px;
+		top: 7px;
+		width: 10%;
+		background: #00d46c;
+	}
+
+	.footer-logo{
+	    max-width: 100%;
+		width: 120px;
+		margin-left: 30px;
+	}
+
+	.navigation {
+		list-style: none;
+	    margin-top: 20px;
+
+		li{
+			a{
+				font-family: 'latoregular';
+				font-size: 20px;
+				color: @font-black;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.no-margin-top{
+		margin-top: 20px;
+	}
+
+	.copyright{
+		font-size: 18px;
+		margin: 50px auto;
+		display: block;
+	}
+
+}

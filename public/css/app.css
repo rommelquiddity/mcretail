@@ -278,6 +278,9 @@ header #user-login-signup .login-link {
 header #user-login-signup .login-link:hover {
   text-decoration: underline;
 }
+body {
+  background: url("/images/bg.jpg") center;
+}
 .container {
   max-width: 1900px;
   display: block;
@@ -314,11 +317,15 @@ section {
 }
 .share-link {
   color: #ffffff;
-  font-family: 'latobold';
+  font-family: 'latoregular';
+  font-weight: bold;
+  letter-spacing: 1px;
   text-decoration: none;
   vertical-align: bottom;
   line-height: 3;
   font-size: 17px;
+  margin: 30px 0 35px 24px;
+  display: block;
 }
 .share-link:before {
   content: "";
@@ -338,9 +345,9 @@ p {
   font-family: 'latobold';
   color: #ffffff;
 }
-h3 {
+h3,
+h4 {
   font-family: 'latoregular';
-  font-size: 17px;
   color: #ffffff;
 }
 .transparent-bg {
@@ -356,7 +363,6 @@ h3 {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100vh;
   min-height: 700px;
   overflow: hidden;
   z-index: 1;
@@ -368,7 +374,7 @@ h3 {
 }
 #home #hero-banner .content {
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   left: 0;
   right: 0;
   margin: auto;
@@ -386,6 +392,7 @@ h3 {
   text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 35px;
+  margin-top: 10px;
 }
 #home #product-banner .container {
   padding: 50px;
@@ -396,8 +403,10 @@ h3 {
 }
 #home #product-banner h3 {
   text-align: center;
-  font-family: 'latoregular';
   text-shadow: 0px 1px 20px #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 #home #product-banner .image-wrapper {
   position: relative;
@@ -448,29 +457,71 @@ h3 {
   line-height: 1.2;
   font-family: 'playfair_displaybold_italic';
   text-shadow: none;
+  text-transform: capitalize;
 }
 #home #product-banner .image-wrapper .content .product-detail .wrapper .product-title:after {
   content: '';
   position: absolute;
-  height: 2px;
+  height: 3px;
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: -6px;
-  width: 40%;
+  bottom: -20px;
+  width: 60%;
   background: #00d46c;
 }
 #home #product-banner .image-wrapper .content .product-detail .wrapper .product-desc {
   text-align: center;
   text-transform: uppercase;
-  font-size: 14px;
-  padding: 30px 70px;
+  font-size: 18px;
+  padding: 72px 30px 40px;
   line-height: 1.2;
   font-family: 'latoregular';
 }
 #home #product-banner .image-wrapper .content .product-detail .wrapper .button {
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin: 18px auto;
+  margin: 20px auto;
   text-align: center;
+}
+footer h4 {
+  color: #262223;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+footer h4:before,
+footer .no-margin-top:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  margin: 0 auto;
+  left: 15px;
+  top: 7px;
+  width: 10%;
+  background: #00d46c;
+}
+footer .footer-logo {
+  max-width: 100%;
+  width: 120px;
+  margin-left: 30px;
+}
+footer .navigation {
+  list-style: none;
+  margin-top: 20px;
+}
+footer .navigation li a {
+  font-family: 'latoregular';
+  font-size: 20px;
+  color: #262223;
+  text-transform: uppercase;
+}
+footer .no-margin-top {
+  margin-top: 20px;
+}
+footer .copyright {
+  font-size: 18px;
+  margin: 50px auto;
+  display: block;
 }
