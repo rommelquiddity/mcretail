@@ -294,6 +294,7 @@ section {
   padding: 0;
   margin: 0;
   width: 100%;
+  min-height: 700px;
 }
 .button {
   display: block;
@@ -305,9 +306,13 @@ section {
   text-transform: uppercase;
   padding: 8px 5px;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.button:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 .red-btn {
   background-color: #d0333d;
@@ -315,7 +320,7 @@ section {
 .green-btn {
   background-color: #00d46c;
 }
-.share-link {
+.share-btn-white {
   color: #ffffff;
   font-family: 'latoregular';
   font-weight: bold;
@@ -327,7 +332,7 @@ section {
   margin: 30px 0 35px 24px;
   display: block;
 }
-.share-link:before {
+.share-btn-white:before {
   content: "";
   display: block;
   background: url("/images/share-white.png") no-repeat center;
@@ -337,9 +342,32 @@ section {
   float: left;
   margin: 0 6px 0 0;
 }
+.share-btn-green {
+  color: #262223;
+  font-family: 'latoregular';
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  vertical-align: bottom;
+  line-height: 3;
+  font-size: 17px;
+  margin: 30px 0 35px 24px;
+  display: block;
+}
+.share-btn-green:before {
+  content: "";
+  display: block;
+  background: url("/images/share-green.png") no-repeat center;
+  background-size: 70%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 0 6px 0 0;
+}
 h2 {
   font-family: 'playfair_displayblack_italic';
   color: #ffffff;
+  text-align: center;
 }
 p {
   font-family: 'latobold';
@@ -383,6 +411,7 @@ h4 {
 }
 #home #hero-banner .content h2 {
   text-shadow: 0px 1px 18px #000000;
+  text-align: left;
 }
 #home #hero-banner .content p {
   font-size: 16px;
@@ -418,7 +447,7 @@ h4 {
 }
 #home #product-banner .image-wrapper .content {
   position: absolute;
-  top: 60;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -439,7 +468,7 @@ h4 {
   border-radius: 4px;
   padding: 5px 10px;
   margin: 25px auto 12px;
-  width: 80px;
+  width: 98px;
   font-size: 12px;
   display: block;
   text-align: center;
@@ -479,10 +508,74 @@ h4 {
   font-family: 'latoregular';
 }
 #home #product-banner .image-wrapper .content .product-detail .wrapper .button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   margin: 20px auto;
   text-align: center;
+}
+#home #recipes-banner {
+  background: #ffffff url("/images/recipe-bg.jpg") no-repeat center top;
+  background-size: cover;
+}
+#home #recipes-banner h2,
+#home #recipes-banner h3 {
+  color: #262223;
+}
+#home #recipes-banner h2 {
+  padding-top: 50px;
+}
+#home #recipes-banner h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  padding: 1% 24%;
+}
+#home #recipes-banner .recipe-list {
+  margin: 20px auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+#home #recipes-banner .recipe-list .recipe-container {
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+}
+#home #recipes-banner .recipe-list .recipe-container .recipe-content {
+  margin-top: 40px;
+}
+#home #recipes-banner .recipe-list .recipe-container .recipe-content .recipe-title {
+  font-family: 'playfair_displaybold_italic';
+  font-size: 20px;
+}
+#home #recipes-banner .recipe-list .recipe-container .thumb-container {
+  position: relative;
+  display: block;
+}
+#home #recipes-banner .recipe-list .recipe-container .thumb-container .recipe-thumb {
+  max-width: 100%;
+}
+#home #recipes-banner .recipe-list .recipe-container .thumb-container .publisher-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  margin: auto;
+}
+#home #recipes-banner .recipe-list .recipe-container .thumb-container .publisher-container .publisher-img {
+  max-width: 100%;
+  width: 65px;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+#home #recipes-banner .recipe-list .recipe-container .thumb-container .publisher-container .publisher {
+  text-align: center;
+}
+#home #recipes-banner .recipe-list .recipe-container .red-btn {
+  background-color: #d73b2f;
+  display: block;
+  margin: auto;
 }
 footer h4 {
   color: #262223;

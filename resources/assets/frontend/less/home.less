@@ -32,7 +32,8 @@
 		    z-index: 2;
 		    width: 90%;
 			h2{
-				text-shadow: 0px 1px 18px #000000
+				text-shadow: 0px 1px 18px #000000;
+				text-align: left;
 			}
 			p{
 			    font-size: 16px;
@@ -77,7 +78,7 @@
 
 			.content{
 			   	position: absolute;
-			    top: 60;
+			    top: 0;
 			    left: 0;
 			    right: 0;
 			    margin: auto;
@@ -99,7 +100,7 @@
 					    border-radius: 4px;
 					    padding: 5px 10px;
 					    margin: 25px auto 12px;
-					    width: 80px;
+					    width: 98px;
 					    font-size: 12px;
 					    display: block;
 					    text-align: center;
@@ -144,7 +145,6 @@
 					    }
 
 					    .button {
-					    	box-shadow: none;
 					    	margin: 20px auto;
 					    	text-align: center;
 					    }
@@ -152,6 +152,87 @@
 				}
 			}
 		}
+	}
+
+	#recipes-banner{
+		background: #ffffff url("@{images}/recipe-bg.jpg") no-repeat center top;
+		background-size: cover;
+
+		h2, h3{
+			color: @font-black;
+		}
+		h2{
+			padding-top: 50px;
+		}
+		h3{
+	    	font-size: 18px;
+		    text-transform: uppercase;
+		    font-weight: 100;
+			text-align: center;
+			padding: 1% 24%;
+		}
+
+		.recipe-list{
+			margin: 20px auto;
+			padding-left: 70px;
+			padding-right: 70px;
+
+			.recipe-container{
+				background-color: @font-white;
+				border-radius: 4px;
+				-webkit-box-shadow:0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow:0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+				box-shadow:0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+
+				.recipe-content{
+
+					margin-top: 40px;
+
+					.recipe-title{
+						font-family: 'playfair_displaybold_italic';
+						font-size: 20px;
+					}
+				}
+
+				.thumb-container{
+					position: relative;	
+					display: block;
+
+					.recipe-thumb{
+						max-width: 100%;
+					}	
+
+					.publisher-container{
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: -60px;
+						margin: auto;
+
+						.publisher-img{
+							max-width: 100%;
+							width: 65px;
+							height: auto;
+							border-radius: 50%;
+							margin: auto;
+							display: block;
+						}
+
+						.publisher{
+							text-align: center;
+						}
+
+					}			
+				}
+
+				.red-btn{
+					background-color: #d73b2f;
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+
 	}
 }
 

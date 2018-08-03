@@ -14,11 +14,9 @@
 						<p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat.</p>
 						<a class="button green-btn" href=""> View Product </a>
 					</div>
-					<a class="share-link" href="#">Share</a>
+					<a class="share-btn-white" href="#">Share</a>
 				</div>
 			</div>
-
-
 
 			<img class="banner-bg" src="{{ asset('/images/product-banner.jpg') }}" />
 			
