@@ -19,7 +19,12 @@
 			</div>
 
 			<img class="banner-bg" src="{{ asset('/images/product-banner.jpg') }}" />
-			
+
+
+			<div class="like-this-container">
+				<label>Like this dish?</label>
+				<a class="view-recipe-btn"href="">View the recipe</a>
+			</div>
 		</div>
 	</div>
 </section>

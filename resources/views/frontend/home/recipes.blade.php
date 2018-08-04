@@ -15,10 +15,10 @@
 					<div class="recipe-content">
 						<div class="prep-container">
 							<div class="prep-time">
-							15 mins
+								Prep Time: <span class="mins">15 mins</span>
 							</div>
-							<div class="clock-time">
-							20 mins
+							<div class="cook-time">
+								Cook time: <span class="mins">20 mins</span>
 							</div>
 						</div>
 						<h3 class="recipe-title">Giant Prawns Bathed in Dark Beer & Spices</h3>
@@ -27,7 +27,7 @@
 					</div>
 					<div class="recipe-action-btn">
 						<a class="share-btn-green" href="">Share</a>
-						<a href="favorite-btn">Favorite</a>
+						<a class="favorite-btn" href="">Favorite</a>
 					</div>
 				</div>
 			</div>
@@ -44,10 +44,10 @@
 					<div class="recipe-content">
 						<div class="prep-container">
 							<div class="prep-time">
-							15 mins
+								Prep Time: <span class="mins">15 mins</span>
 							</div>
-							<div class="clock-time">
-							20 mins
+							<div class="cook-time">
+								Cook time: <span class="mins">20 mins</span>
 							</div>
 						</div>
 						<h3 class="recipe-title">Giant Prawns Bathed in Dark Beer & Spices</h3>
@@ -56,7 +56,7 @@
 					</div>
 					<div class="recipe-action-btn">
 						<a class="share-btn-green" href="">Share</a>
-						<a href="favorite-btn">Favorite</a>
+						<a class="favorite-btn" href="">Favorite</a>
 					</div>
 				</div>
 			</div>
@@ -73,10 +73,10 @@
 					<div class="recipe-content">
 						<div class="prep-container">
 							<div class="prep-time">
-							15 mins
+								Prep Time: <span class="mins">15 mins</span>
 							</div>
-							<div class="clock-time">
-							20 mins
+							<div class="cook-time">
+								Cook time: <span class="mins">20 mins</span>
 							</div>
 						</div>
 						<h3 class="recipe-title">Giant Prawns Bathed in Dark Beer & Spices</h3>
@@ -85,11 +85,11 @@
 					</div>
 					<div class="recipe-action-btn">
 						<a class="share-btn-green" href="">Share</a>
-						<a href="favorite-btn">Favorite</a>
+						<a class="favorite-btn" href="">Favorite</a>
 					</div>
 				</div>
 			</div>
 		</div>	
-		<a class="button green-btn" href=""> Browse All Recipes >> </a>
+		<a class="button green-btn browse-all-recipe" href=""> Browse All Recipes >> </a>
 	</div>
 </section>
