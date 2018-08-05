@@ -4,7 +4,7 @@
 @endphp
 
 <header>
-	<div class="transparent-bg">
+	<div id="header" class="transparent-bg">
 		<div class="container">
 			<div id="logo">
 				<h1>
@@ -14,6 +14,9 @@
 				</h1>
 			</div>
 			<div id="main-menu">
+				<a class="mob-login" href="">LOGIN</a>
+				<button class="nav-close-mob href=""></button>
+				<div class="clearfix"></div>
 				<nav>
 					<ul>
 						<li><a href="">Products</a></li>
@@ -34,6 +37,11 @@
 				<a class="signup-link" href="#">No account yet? Sign up here</a>
 				<a class="login-link" href="">Login</a>
 			</div>
+			<button id="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</div>
 	</div>
 </header>

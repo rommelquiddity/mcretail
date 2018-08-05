@@ -176,6 +176,7 @@ header #main-menu {
   margin-bottom: 20px;
   font-family: 'latoregular';
   font-weight: bold;
+  background-color: rgba(38, 34, 35, 0.5);
 }
 header #main-menu nav ul {
   list-style: none;
@@ -278,6 +279,11 @@ header #user-login-signup .login-link {
 header #user-login-signup .login-link:hover {
   text-decoration: underline;
 }
+header #nav-toggle,
+header .nav-close-mob,
+header .mob-login {
+  display: none;
+}
 body {
   background: url("/images/bg.jpg") center;
 }
@@ -330,7 +336,7 @@ section {
   line-height: 3;
   font-size: 17px;
   margin: 30px 0 35px 24px;
-  display: block;
+  display: inline-block;
 }
 .share-btn-white:before {
   content: "";
@@ -722,4 +728,123 @@ footer .copyright {
   font-size: 18px;
   margin: 50px auto;
   display: block;
+}
+@media only screen and (max-width: 1225px), only screen and (max-width: 479px) {
+  header #header {
+    position: relative;
+  }
+  header #header #logo a {
+    width: auto;
+    height: 42px;
+  }
+  header #header #main-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 300px;
+    background-color: rgba(38, 34, 35, 0.8);
+  }
+  header #header #main-menu nav {
+    clear: both;
+  }
+  header #header #main-menu nav ul li {
+    float: none;
+  }
+  header #header #main-menu nav ul li:not(:first-child) {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(11%, #fff), color-stop(1%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, #fff 11%, rgba(255, 255, 255, 0) 1%);
+    background-position: top;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+  header #header #main-menu nav ul li a {
+    font-size: 13px;
+    display: block;
+    padding: 16px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'open_sanssemibold';
+  }
+  header #header #main-menu nav ul li ul.sub-menu {
+    position: relative;
+    top: 0;
+    visibility: unset;
+    opacity: 1;
+    display: none;
+  }
+  header #header #main-menu nav ul li ul.sub-menu li {
+    padding-left: 14px;
+  }
+  header #header #main-menu nav ul li:hover ul.sub-menu {
+    display: block;
+  }
+  header #header #main-menu .mob-login {
+    float: left;
+    color: #ffffff;
+    font-family: 'latoregular';
+    font-size: 13px;
+    background: #00d07b;
+    border-radius: 4px;
+    padding: 5px 12px;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+  header #header #main-menu .nav-close-mob {
+    background: none;
+    border: none;
+    float: right;
+    background: url("/images/nav-close-btn.png") no-repeat center;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+    margin-top: 16px;
+    margin-right: 12px;
+  }
+  header #header #main-menu .nav-close-mob,
+  header #header #main-menu .mob-login {
+    display: block;
+  }
+  header #nav-toggle {
+    display: inline-block;
+    border: none;
+    width: 45px;
+    margin-left: 10px;
+    background: none;
+    float: right;
+    margin-top: 20px;
+  }
+  header #nav-toggle span {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 4px;
+  }
+  header #user-login-signup {
+    position: absolute;
+    display: blcok;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    background: #00da6f;
+  }
+  header #user-login-signup .signup-link {
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+  }
+  header #user-login-signup .login-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1225px), only screen and (max-width: 479px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
